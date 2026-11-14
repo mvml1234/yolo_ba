@@ -1,0 +1,15 @@
+export const categoryGuides=[
+{name:'Gastronomía',tag:'Sabores que se comparten',description:'Catas, cocina y mesas que te invitan a probar algo distinto. Para descubrir sabores y compartir un buen momento.',examples:'Catas · clases de cocina · degustaciones'},
+{name:'Cultura y ciudad',tag:'Mirá Buenos Aires con otros ojos',description:'Museos, patrimonio y recorridos para encontrar historias donde antes pasabas de largo.',examples:'Museos · visitas guiadas · paseos urbanos'},
+{name:'Agua y Delta',tag:'Una pausa cerca del agua',description:'Remadas, navegaciones y salidas por el Delta. Cada actividad tiene sus requisitos y depende de las condiciones del lugar.',examples:'Kayak · paseos en barco · Delta'},
+{name:'Campo y escapadas',tag:'Cambiá de paisaje',description:'Planes para salir de la ciudad, respirar otro aire y regalarte una pausa. Revisá siempre qué traslados están incluidos.',examples:'Días de campo · pueblos · naturaleza'},
+{name:'Aire y adrenalina',tag:'Un poco de vértigo, muchas historias',description:'Desafíos y aventura con prestadores especializados. La edad, el clima y las condiciones de cada plan se confirman antes de reservar.',examples:'Escalada · actividades de altura · aventura'},
+{name:'Bienestar',tag:'Un rato para bajar el ritmo',description:'Movimiento, descanso y prácticas para dedicarte tiempo. Elegí según tus preferencias y los requisitos de cada actividad.',examples:'Yoga · relajación · movimiento consciente'},
+{name:'Talleres creativos',tag:'Hacé algo con tus propias manos',description:'Espacios para experimentar, aprender una técnica y disfrutar del proceso, sin necesidad de hacerlo perfecto.',examples:'Cerámica · arte · oficios'},
+{name:'Juegos y deportes',tag:'Compartí, jugá, movete',description:'Desafíos para hacer en compañía o probar una actividad nueva. Hay opciones de equipo, de mesa y de movimiento.',examples:'Escape rooms · juegos · deportes'},
+{name:'Para el corazón',tag:'Tu tiempo también puede ayudar',description:'Voluntariado y acciones solidarias para acompañar a personas, cuidar el ambiente y aportar a la comunidad. Sin arancel de participación y sin ingreso para YOLO.',examples:'Ayuda comunitaria · ambiente · accesibilidad · ciencia ciudadana',nonprofit:true}
+,{name:'Buenos Aires gratis',tag:'La ciudad sin pagar entrada',description:'Museos, naturaleza, paseos, visitas guiadas y actividades culturales gratuitas en Buenos Aires. Cada propuesta informa acceso, requisitos y fuente oficial.',examples:'Museos · paseos · naturaleza · visitas guiadas',freeLive:true}
+,{name:'Teatro',tag:'Historias que se viven en una sala',description:'Cartelera, funciones y precios publicados por los teatros. La disponibilidad se consulta por función en la boletería oficial.',examples:'Teatro · comedia · musical · teatro independiente'}
+,{name:'Shows en vivo',tag:'La ciudad suena en vivo',description:'Recitales, conciertos, danza y espectáculos en vivo. Fichas oficiales, tarifas publicadas y estado de la consulta de entradas.',examples:'Recitales · jazz · conciertos · danza'}
+];
+export const categoryNames=categoryGuides.map(c=>c.name);

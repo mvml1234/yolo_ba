@@ -1,0 +1,1612 @@
+{
+  "E01": {
+    "kind": "public",
+    "source": "https://www.catas.ar/preguntas/",
+    "amount": 60000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:34:00.009376+00:00",
+    "excerpt": " las copas de vino, desde $8.000; y la cata de vino guiada, $60.000 por persona. Todos los precios están en la carta. Aceptamos todos los medios de pago"
+  },
+  "E05": {
+    "kind": "public",
+    "source": "https://www.tangoporteno.com.ar/es/tarifas",
+    "amount": 160000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:34:00.009376+00:00",
+    "excerpt": "s 普通话 Tarifas Precios no reembolsables CENA SHOW Platea ARS $160.000 Nuestra Cena Show Platea combina una vista privilegiada del show desde una exclusiva"
+  },
+  "E07": {
+    "kind": "public",
+    "source": "https://teatrocolon.org.ar/visitas-guiadas/",
+    "amount": 37000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:45:03.571292+00:00",
+    "excerpt": "General: $37.000; Residentes argentinos (con DNI): $18.000",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Precio de entrada publicado; IVA/cargos adicionales no desglosados"
+  },
+  "E09": {
+    "kind": "public",
+    "source": "https://www.aremar.com.ar/",
+    "amount": 40000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:34:00.009376+00:00",
+    "excerpt": "ciación al kayak de travesía' Principiante Ver más Travesía $ 40.000 Paseo en kayak Principiante 2 horas Ver más Curso $ 110.000 Curso de kayak ACA - Niv"
+  },
+  "E10": {
+    "kind": "public",
+    "source": "https://catamaranestigre.com.ar/es/exp/paseo-3-rios",
+    "amount": 26000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Paseo 3 Ríos · tarifa general/adulto online $26000",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente"
+  },
+  "E12": {
+    "kind": "public",
+    "source": "https://www.supyarte.com/book-online",
+    "amount": 35000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Clases de Iniciación al SUP · 2 h · 35.000 pesos argentinos",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente"
+  },
+  "E19": {
+    "kind": "public",
+    "source": "https://ba-h.com.ar/vuelo-en-globo/",
+    "amount": 200000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:34:00.009376+00:00",
+    "excerpt": "iloto. + TARIFAS – Valor por persona en vuelo compartido: AR$ 200.000. – Valor total en vuelo privado (sean 1 ó hasta 4 personas): AR$ 800.000 (4 x AR$ 20"
+  },
+  "E20": {
+    "kind": "public",
+    "source": "https://www.quierovolar.com.ar/",
+    "amount": 179500,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:34:00.009376+00:00",
+    "excerpt": "go ? PROMO x 1 : Vuelo de Bautismo x 1 + Video y Foto HD. Ar$ 179500.- Leer más PROMO x 2: Vuelo de Bautismo x 2 + Video y Foto HD. C/uno Ar$ 315100.- Le"
+  },
+  "E22": {
+    "kind": "public",
+    "source": "https://www.inmasajes.com/masajespararelajar",
+    "amount": 70000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:34:00.009376+00:00",
+    "excerpt": " and (max-width: 767px) { } Masaje Relajante Premium 60 min $70.000 90 min $100.000 Escapa del ruido y el caos. Masajes largos… fluidos con una presión "
+  },
+  "E23": {
+    "kind": "public",
+    "source": "https://www.zerogravite.com.ar/tarifas/",
+    "amount": 62000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:34:00.009376+00:00",
+    "excerpt": "ero Gravité Nuestras tarifas Pack UNA SESI Ó N DE FLOTACIÓN $62.000 Pack 2 SESIONES DE FLOTACIÓN $108.000 Pack de 4 sesiones de flotación: $186.000 *Los"
+  },
+  "E24": {
+    "kind": "public",
+    "source": "https://www.santelmoyoga.com/p/tarifas.html",
+    "amount": 30000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:34:00.009376+00:00",
+    "excerpt": "de 8 clases ó pase libre $100.000 Clase de prueba* o suelta $30.000 *Ésta se descuenta luego del plan que elijas. Podés comenzar en cualquier momento de"
+  },
+  "Xd0dc8878ea3": {
+    "kind": "public",
+    "source": "https://teatrocolon.org.ar/colon-fabrica/",
+    "amount": 13000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:45:03.571292+00:00",
+    "excerpt": "Entrada General (recorrido libre) $13.000; Residentes $6.000",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Precio de entrada publicado; IVA/cargos adicionales no desglosados"
+  },
+  "Xd83ba8ba121": {
+    "kind": "public",
+    "source": "https://buenosaires.gob.ar/cultura/museos/museo-casa-carlos-gardel",
+    "amount": 10000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:45:03.571292+00:00",
+    "excerpt": "Entrada General (Extranjeros): $10.000; Residentes Argentinos y/o Extranjeros (con DNI): $2.000",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Precio de entrada publicado; IVA/cargos adicionales no desglosados"
+  },
+  "Xc1a157b931c": {
+    "kind": "public",
+    "source": "https://buenosaires.gob.ar/gcaba_historico/culturamuseos/museo-benito-quinquela-martin",
+    "amount": 10000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:45:03.571292+00:00",
+    "excerpt": "Público general $10.000; Residentes Argentinos y/o Extranjeros (con DNI): $2.000",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Precio de entrada publicado; IVA/cargos adicionales no desglosados"
+  },
+  "X5b343f540bd": {
+    "kind": "public",
+    "source": "https://buenosaires.gob.ar/cultura/museos/museo-de-arte-popular-jose-hernandez",
+    "amount": 10000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:45:03.571292+00:00",
+    "excerpt": "Público General: $10.000; Residentes Argentinos y/o Extranjeros (con DNI): $2.000",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Precio de entrada publicado; IVA/cargos adicionales no desglosados"
+  },
+  "X4b2b3b1cd30": {
+    "kind": "public",
+    "source": "https://buenosaires.gob.ar/cultura/museos/casa-fernandez-blanco",
+    "amount": 10000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:45:03.571292+00:00",
+    "excerpt": "Público General: $10.000; Residentes Argentinos y/o Extranjeros (con DNI): $2.000",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Precio de entrada publicado; IVA/cargos adicionales no desglosados"
+  },
+  "X9bc767d2cb1": {
+    "kind": "public",
+    "source": "https://buenosaires.gob.ar/cultura/museos/museo-larreta",
+    "amount": 10000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:45:03.571292+00:00",
+    "excerpt": "Público General: $10.000; Residentes Argentinos y/o Extranjeros (con DNI): $2.000",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Precio de entrada publicado; IVA/cargos adicionales no desglosados"
+  },
+  "X149ea38375a": {
+    "kind": "public",
+    "source": "https://www.xulsolar.org.ar/",
+    "amount": 9000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:45:03.571292+00:00",
+    "excerpt": "Entrada general $9000",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Precio de entrada publicado; IVA/cargos adicionales no desglosados"
+  },
+  "Xd61a4f534a8": {
+    "kind": "public",
+    "source": "https://malba.org.ar/visitar/",
+    "amount": 14000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:34:00.009376+00:00",
+    "excerpt": "ts Lunes, Jueves, Viernes, Sábado y Domingo Público general $14.000 Estudiantes, docentes y jubilados con acreditación $7.000 Menores de 5 años Sin carg"
+  },
+  "X46b244dfc89": {
+    "kind": "public",
+    "source": "https://proa.org/esp/tu-visita.php",
+    "amount": 7000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:34:00.009376+00:00",
+    "excerpt": "tribución Miércoles: sin cargo - Jueves a domingos General: $7000 Estudiantes, docentes y jubilados: $5000 Menores de 12: sin cargo Quiénes somos Proa"
+  },
+  "Xc8ed3e3bc03": {
+    "kind": "public",
+    "source": "https://museomoderno.org/planea-tu-visita/",
+    "amount": 16000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:45:03.571292+00:00",
+    "excerpt": "Entrada general (Extranjeros): $16.000; Entrada general (Residentes): $5.000",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Precio de entrada publicado; IVA/cargos adicionales no desglosados"
+  },
+  "Xfc9a3d24d37": {
+    "kind": "public",
+    "source": "https://museomacba.org/visitanos/",
+    "amount": 12000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:45:03.571292+00:00",
+    "excerpt": "Jueves a lunes General: $12.000; Miércoles General: $6.000",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Precio de entrada publicado; IVA/cargos adicionales no desglosados"
+  },
+  "X0add0839003": {
+    "kind": "public",
+    "source": "https://buenosaires.gob.ar/cultura/museos/buenos-aires-museo",
+    "amount": 10000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:45:03.571292+00:00",
+    "excerpt": "Público General: $10.000; Residentes Argentinos y/o Extranjeros (con DNI): $2.000",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Precio de entrada publicado; IVA/cargos adicionales no desglosados"
+  },
+  "X7444a63c73b": {
+    "kind": "public",
+    "source": "https://www.supyarte.com/book-online",
+    "amount": 30000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Clases de Iniciación al Va’a · 2 h · 30.000 pesos argentinos",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente"
+  },
+  "Xa4e15052191": {
+    "kind": "public",
+    "source": "https://www.supyarte.com/book-online",
+    "amount": 35000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Curso básico de Kayak Sit on Top · 35.000 pesos argentinos",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente"
+  },
+  "X643d08cc82f": {
+    "kind": "public",
+    "source": "https://catamaranestigre.com.ar/es/exp/paseo-6-rios",
+    "amount": 33000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Paseo 6 Ríos · tarifa general/adulto online $33000",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente"
+  },
+  "X4df93d32f15": {
+    "kind": "public",
+    "source": "https://catamaranestigre.com.ar/es/exp/delta-premium",
+    "amount": 63000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Navegación Delta Premium — solo ida · tarifa general/adulto online $63000",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente"
+  },
+  "X44edf537c2a": {
+    "kind": "public",
+    "source": "https://www.oceanicabuceo.com.ar/bautismos/",
+    "amount": 80,
+    "currency": "USD",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Precios Bautismo y Servicio de fotos USD$80",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente"
+  },
+  "X2279bc35c6e": {
+    "kind": "public",
+    "source": "https://www.clubdelescape.com/es/buenosaires",
+    "amount": 42000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Tarifas por jugador desde la API pública que alimenta la tabla de precios de la página oficial; ver priceVariants.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente",
+    "tariffSource": "https://www.clubdelescape.com/api/prices?sede=buenosaires",
+    "tiers": [
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 42000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 38000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 36000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 7,
+        "maxPeople": 7,
+        "amount": 34000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 8,
+        "maxPeople": 8,
+        "amount": 31000,
+        "unit": "person"
+      }
+    ]
+  },
+  "Xafca59b797e": {
+    "kind": "public",
+    "source": "https://www.clubdelescape.com/es/buenosaires",
+    "amount": 45000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Tarifas por jugador desde la API pública que alimenta la tabla de precios de la página oficial; ver priceVariants.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente",
+    "tariffSource": "https://www.clubdelescape.com/api/prices?sede=buenosaires",
+    "tiers": [
+      {
+        "minPeople": 3,
+        "maxPeople": 3,
+        "amount": 45000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 43000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 40000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 38000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 7,
+        "maxPeople": 7,
+        "amount": 35000,
+        "unit": "person"
+      }
+    ]
+  },
+  "X0a77b515b04": {
+    "kind": "public",
+    "source": "https://www.clubdelescape.com/es/buenosaires",
+    "amount": 32000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Tarifas por jugador desde la API pública que alimenta la tabla de precios de la página oficial; ver priceVariants.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente",
+    "tariffSource": "https://www.clubdelescape.com/api/prices?sede=buenosaires",
+    "tiers": [
+      {
+        "minPeople": 2,
+        "maxPeople": 2,
+        "amount": 32000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 3,
+        "maxPeople": 3,
+        "amount": 30000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 28000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 26000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 24000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 7,
+        "maxPeople": 7,
+        "amount": 22000,
+        "unit": "person"
+      }
+    ]
+  },
+  "Xe822e658ecb": {
+    "kind": "public",
+    "source": "https://www.clubdelescape.com/es/buenosaires",
+    "amount": 32000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Tarifas por jugador desde la API pública que alimenta la tabla de precios de la página oficial; ver priceVariants.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente",
+    "tariffSource": "https://www.clubdelescape.com/api/prices?sede=buenosaires",
+    "tiers": [
+      {
+        "minPeople": 2,
+        "maxPeople": 2,
+        "amount": 32000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 3,
+        "maxPeople": 3,
+        "amount": 30000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 28000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 26000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 24000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 7,
+        "maxPeople": 7,
+        "amount": 22000,
+        "unit": "person"
+      }
+    ]
+  },
+  "X34462ce3f24": {
+    "kind": "public",
+    "source": "https://www.clubdelescape.com/es/buenosaires",
+    "amount": 33000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Tarifas por jugador desde la API pública que alimenta la tabla de precios de la página oficial; ver priceVariants.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente",
+    "tariffSource": "https://www.clubdelescape.com/api/prices?sede=buenosaires",
+    "tiers": [
+      {
+        "minPeople": 3,
+        "maxPeople": 3,
+        "amount": 33000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 31000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 29000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 27000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 7,
+        "maxPeople": 7,
+        "amount": 27000,
+        "unit": "person"
+      }
+    ]
+  },
+  "X33e04471998": {
+    "kind": "public",
+    "source": "https://www.clubdelescape.com/es/buenosaires",
+    "amount": 32000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Tarifas por jugador desde la API pública que alimenta la tabla de precios de la página oficial; ver priceVariants.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente",
+    "tariffSource": "https://www.clubdelescape.com/api/prices?sede=buenosaires",
+    "tiers": [
+      {
+        "minPeople": 2,
+        "maxPeople": 2,
+        "amount": 32000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 3,
+        "maxPeople": 3,
+        "amount": 30000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 28000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 26000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 24000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 7,
+        "maxPeople": 7,
+        "amount": 22000,
+        "unit": "person"
+      }
+    ]
+  },
+  "X4121a26a3df": {
+    "kind": "public",
+    "source": "https://www.clubdelescape.com/es/buenosaires",
+    "amount": 32000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Tarifas por jugador desde la API pública que alimenta la tabla de precios de la página oficial; ver priceVariants.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente",
+    "tariffSource": "https://www.clubdelescape.com/api/prices?sede=buenosaires",
+    "tiers": [
+      {
+        "minPeople": 2,
+        "maxPeople": 2,
+        "amount": 32000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 3,
+        "maxPeople": 3,
+        "amount": 30000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 28000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 26000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 24000,
+        "unit": "person"
+      }
+    ]
+  },
+  "X50a9b2760d1": {
+    "kind": "public",
+    "source": "https://www.clubdelescape.com/es/buenosaires",
+    "amount": 33000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Tarifas por jugador desde la API pública que alimenta la tabla de precios de la página oficial; ver priceVariants.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente",
+    "tariffSource": "https://www.clubdelescape.com/api/prices?sede=buenosaires",
+    "tiers": [
+      {
+        "minPeople": 2,
+        "maxPeople": 2,
+        "amount": 33000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 3,
+        "maxPeople": 3,
+        "amount": 31000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 29000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 27000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 25000,
+        "unit": "person"
+      }
+    ]
+  },
+  "X35c4f66d65c": {
+    "kind": "public",
+    "source": "https://www.clubdelescape.com/es/buenosaires",
+    "amount": 28000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Tarifas por jugador desde la API pública que alimenta la tabla de precios de la página oficial; ver priceVariants.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente",
+    "tariffSource": "https://www.clubdelescape.com/api/prices?sede=buenosaires",
+    "tiers": [
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 28000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 26000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 24000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 7,
+        "maxPeople": 7,
+        "amount": 22000,
+        "unit": "person"
+      }
+    ]
+  },
+  "X0c825a1d27f": {
+    "kind": "public",
+    "source": "https://www.clubdelescape.com/es/buenosaires",
+    "amount": 30000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Tarifas por jugador desde la API pública que alimenta la tabla de precios de la página oficial; ver priceVariants.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente",
+    "tariffSource": "https://www.clubdelescape.com/api/prices?sede=buenosaires",
+    "tiers": [
+      {
+        "minPeople": 3,
+        "maxPeople": 3,
+        "amount": 30000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 28000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 26000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 24000,
+        "unit": "person"
+      }
+    ]
+  },
+  "X73a39319645": {
+    "kind": "public",
+    "source": "https://www.clubdelescape.com/es/buenosaires",
+    "amount": 32000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Tarifas por jugador desde la API pública que alimenta la tabla de precios de la página oficial; ver priceVariants.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente",
+    "tariffSource": "https://www.clubdelescape.com/api/prices?sede=buenosaires",
+    "tiers": [
+      {
+        "minPeople": 2,
+        "maxPeople": 2,
+        "amount": 32000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 3,
+        "maxPeople": 3,
+        "amount": 30000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 28000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 26000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 24000,
+        "unit": "person"
+      }
+    ]
+  },
+  "X038d1e4e1ad": {
+    "kind": "public",
+    "source": "https://www.clubdelescape.com/es/buenosaires",
+    "amount": 32000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Tarifas por jugador desde la API pública que alimenta la tabla de precios de la página oficial; ver priceVariants.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente",
+    "tariffSource": "https://www.clubdelescape.com/api/prices?sede=buenosaires",
+    "tiers": [
+      {
+        "minPeople": 2,
+        "maxPeople": 2,
+        "amount": 32000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 3,
+        "maxPeople": 3,
+        "amount": 30000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 28000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 26000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 24000,
+        "unit": "person"
+      }
+    ]
+  },
+  "Xb2e13c99573": {
+    "kind": "public",
+    "source": "https://www.clubdelescape.com/es/buenosaires",
+    "amount": 30000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Tarifas por jugador desde la API pública que alimenta la tabla de precios de la página oficial; ver priceVariants.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente",
+    "tariffSource": "https://www.clubdelescape.com/api/prices?sede=buenosaires",
+    "tiers": [
+      {
+        "minPeople": 3,
+        "maxPeople": 3,
+        "amount": 30000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 28000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 26000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 24000,
+        "unit": "person"
+      }
+    ]
+  },
+  "Xfe5c094051c": {
+    "kind": "public",
+    "source": "https://www.clubdelescape.com/es/buenosaires",
+    "amount": 33000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Tarifas por jugador desde la API pública que alimenta la tabla de precios de la página oficial; ver priceVariants.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente",
+    "tariffSource": "https://www.clubdelescape.com/api/prices?sede=buenosaires",
+    "tiers": [
+      {
+        "minPeople": 2,
+        "maxPeople": 2,
+        "amount": 33000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 3,
+        "maxPeople": 3,
+        "amount": 31000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 29000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 27000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 25000,
+        "unit": "person"
+      }
+    ]
+  },
+  "Xcbf9a111ff0": {
+    "kind": "public",
+    "source": "https://www.clubdelescape.com/es/buenosaires",
+    "amount": 32000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Tarifas por jugador desde la API pública que alimenta la tabla de precios de la página oficial; ver priceVariants.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente",
+    "tariffSource": "https://www.clubdelescape.com/api/prices?sede=buenosaires",
+    "tiers": [
+      {
+        "minPeople": 2,
+        "maxPeople": 2,
+        "amount": 32000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 3,
+        "maxPeople": 3,
+        "amount": 30000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 28000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 26000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 24000,
+        "unit": "person"
+      }
+    ]
+  },
+  "Xd14d4aef0fb": {
+    "kind": "public",
+    "source": "https://www.clubdelescape.com/es/buenosaires",
+    "amount": 30000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Tarifas por jugador desde la API pública que alimenta la tabla de precios de la página oficial; ver priceVariants.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente",
+    "tariffSource": "https://www.clubdelescape.com/api/prices?sede=buenosaires",
+    "tiers": [
+      {
+        "minPeople": 3,
+        "maxPeople": 3,
+        "amount": 30000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 28000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 26000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 24000,
+        "unit": "person"
+      }
+    ]
+  },
+  "X9d6691ec0b5": {
+    "kind": "public",
+    "source": "https://www.clubdelescape.com/es/buenosaires",
+    "amount": 32000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Tarifas por jugador desde la API pública que alimenta la tabla de precios de la página oficial; ver priceVariants.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente",
+    "tariffSource": "https://www.clubdelescape.com/api/prices?sede=buenosaires",
+    "tiers": [
+      {
+        "minPeople": 2,
+        "maxPeople": 2,
+        "amount": 32000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 3,
+        "maxPeople": 3,
+        "amount": 30000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 28000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 26000,
+        "unit": "person"
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 24000,
+        "unit": "person"
+      }
+    ]
+  },
+  "Xbe054d9174f": {
+    "kind": "public",
+    "source": "https://www.gamehouseba.com/es/recoleta",
+    "amount": 34000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:44:26.358640+00:00",
+    "excerpt": "2 Jugadores $ 34.000 c/u; 3 Jugadores $ 32.000 c/u; 4 Jugadores $ 29.000 c/u; 5 Jugadores $ 28.000 c/u; 6 Jugadores $ 27.000 c/u",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Final publicado; desglose de IVA no informado",
+    "conditionsSource": "https://www.gamehouseba.com/es/faq",
+    "tiers": [
+      {
+        "minPeople": 2,
+        "maxPeople": 2,
+        "amount": 34000
+      },
+      {
+        "minPeople": 3,
+        "maxPeople": 3,
+        "amount": 32000
+      },
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 29000
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 28000
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 27000
+      }
+    ]
+  },
+  "X7fdf3a49788": {
+    "kind": "public",
+    "source": "https://www.gamehouseba.com/es/recoleta",
+    "amount": 34000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:44:26.358640+00:00",
+    "excerpt": "2 Jugadores $ 34.000 c/u; 3 Jugadores $ 32.000 c/u; 4 Jugadores $ 29.000 c/u; 5 Jugadores $ 28.000 c/u; 6 Jugadores $ 27.000 c/u",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Final publicado; desglose de IVA no informado",
+    "conditionsSource": "https://www.gamehouseba.com/es/faq",
+    "tiers": [
+      {
+        "minPeople": 2,
+        "maxPeople": 2,
+        "amount": 34000
+      },
+      {
+        "minPeople": 3,
+        "maxPeople": 3,
+        "amount": 32000
+      },
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 29000
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 28000
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 27000
+      }
+    ]
+  },
+  "X85ecb3b7ed7": {
+    "kind": "public",
+    "source": "https://www.gamehouseba.com/es/recoleta",
+    "amount": 34000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:44:26.358640+00:00",
+    "excerpt": "2 Jugadores $ 34.000 c/u; 3 Jugadores $ 32.000 c/u; 4 Jugadores $ 29.000 c/u; 5 Jugadores $ 28.000 c/u; 6 Jugadores $ 27.000 c/u",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Final publicado; desglose de IVA no informado",
+    "conditionsSource": "https://www.gamehouseba.com/es/faq",
+    "tiers": [
+      {
+        "minPeople": 2,
+        "maxPeople": 2,
+        "amount": 34000
+      },
+      {
+        "minPeople": 3,
+        "maxPeople": 3,
+        "amount": 32000
+      },
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 29000
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 28000
+      }
+    ]
+  },
+  "X270652c2cc3": {
+    "kind": "public",
+    "source": "https://www.gamehouseba.com/es/recoleta",
+    "amount": 34000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:44:26.358640+00:00",
+    "excerpt": "2 Jugadores $ 34.000 c/u; 3 Jugadores $ 32.000 c/u; 4 Jugadores $ 29.000 c/u; 5 Jugadores $ 28.000 c/u; 6 Jugadores $ 27.000 c/u",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Final publicado; desglose de IVA no informado",
+    "conditionsSource": "https://www.gamehouseba.com/es/faq",
+    "tiers": [
+      {
+        "minPeople": 2,
+        "maxPeople": 2,
+        "amount": 34000
+      },
+      {
+        "minPeople": 3,
+        "maxPeople": 3,
+        "amount": 32000
+      },
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 29000
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 28000
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 27000
+      }
+    ]
+  },
+  "X2e680e22e86": {
+    "kind": "public",
+    "source": "https://www.gamehouseba.com/es/recoleta",
+    "amount": 32000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:44:26.358640+00:00",
+    "excerpt": "2 Jugadores $ 34.000 c/u; 3 Jugadores $ 32.000 c/u; 4 Jugadores $ 29.000 c/u; 5 Jugadores $ 28.000 c/u; 6 Jugadores $ 27.000 c/u",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Final publicado; desglose de IVA no informado",
+    "conditionsSource": "https://www.gamehouseba.com/es/faq",
+    "tiers": [
+      {
+        "minPeople": 3,
+        "maxPeople": 3,
+        "amount": 32000
+      },
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 29000
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 28000
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 27000
+      }
+    ]
+  },
+  "X07003ac20d3": {
+    "kind": "public",
+    "source": "https://www.gamehouseba.com/es/recoleta",
+    "amount": 34000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:44:26.358640+00:00",
+    "excerpt": "2 Jugadores $ 34.000 c/u; 3 Jugadores $ 32.000 c/u; 4 Jugadores $ 29.000 c/u; 5 Jugadores $ 28.000 c/u; 6 Jugadores $ 27.000 c/u",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Final publicado; desglose de IVA no informado",
+    "conditionsSource": "https://www.gamehouseba.com/es/faq",
+    "tiers": [
+      {
+        "minPeople": 2,
+        "maxPeople": 2,
+        "amount": 34000
+      },
+      {
+        "minPeople": 3,
+        "maxPeople": 3,
+        "amount": 32000
+      },
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 29000
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 28000
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 27000
+      }
+    ]
+  },
+  "X30bbb6e438e": {
+    "kind": "public",
+    "source": "https://www.gamehouseba.com/es/palermo",
+    "amount": 34000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:44:26.358640+00:00",
+    "excerpt": "2 Jugadores $ 34.000 c/u",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Final publicado; desglose de IVA no informado",
+    "conditionsSource": "https://www.gamehouseba.com/es/faq",
+    "tiers": [
+      {
+        "minPeople": 2,
+        "maxPeople": 2,
+        "amount": 34000
+      },
+      {
+        "minPeople": 3,
+        "maxPeople": 3,
+        "amount": 32000
+      },
+      {
+        "minPeople": 4,
+        "maxPeople": 4,
+        "amount": 29000
+      },
+      {
+        "minPeople": 5,
+        "maxPeople": 5,
+        "amount": 28000
+      },
+      {
+        "minPeople": 6,
+        "maxPeople": 6,
+        "amount": 27000
+      }
+    ]
+  },
+  "X63617075ccf": {
+    "kind": "public",
+    "source": "https://www.estacionvertical.com.ar/secciones/precios.html",
+    "amount": 21500,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "pase de escalada + pédulas $21.500 / efectivo $20.000",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente"
+  },
+  "X1d1458d4952": {
+    "kind": "public",
+    "source": "https://tienda.eucatigre.com/",
+    "amount": 49000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:47:37.879501+00:00",
+    "excerpt": "Pase general $49.000 · 1 entrada",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente",
+    "tariffSource": "https://tienda.eucatigre.com/api/paquetes"
+  },
+  "Xb2d6ea267da": {
+    "kind": "public",
+    "source": "https://tienda.eucatigre.com/",
+    "amount": 17000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:47:37.879514+00:00",
+    "excerpt": "Torre Vértigo $17.000 · 1 entrada",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente",
+    "tariffSource": "https://tienda.eucatigre.com/api/paquetes"
+  },
+  "Xd6b41cf31e4": {
+    "kind": "public",
+    "source": "https://cpcanuelas.com.ar/vuelos-de-bautismo/",
+    "amount": 95000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:34:00.009376+00:00",
+    "excerpt": " y 30 minutos. Vuelo Bautismo ¡Comprá tu experiencia ahora! $ 95.000 Por vuelo Pleaneador biplaza Mínimo 10' de vuelo Para mayores de 14 años Comprar Tam"
+  },
+  "Rfdbdfe0c42a": {
+    "kind": "public",
+    "source": "https://lotus-masajes.com/precios.php",
+    "amount": 110000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:44:26.358640+00:00",
+    "excerpt": "Masaje individual y circuito wellness: tarjeta $110,000; efectivo o transferencia $100,000. Valores vigentes desde agosto 2026, final sin cargos adicionales.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Final publicado; desglose de IVA no informado",
+    "conditionsSource": "https://lotus-masajes.com/terminos-y-condiciones.php"
+  },
+  "Rc6e9d64e6c0": {
+    "kind": "public",
+    "source": "https://lotus-masajes.com/precios.php",
+    "amount": 115000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:44:26.358640+00:00",
+    "excerpt": "Reflexología podal y circuito wellness: tarjeta $115,000; efectivo o transferencia $105,000. Valores vigentes desde agosto 2026, final sin cargos adicionales.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Final publicado; desglose de IVA no informado",
+    "conditionsSource": "https://lotus-masajes.com/terminos-y-condiciones.php"
+  },
+  "Re2bff2a3979": {
+    "kind": "public",
+    "source": "https://lotus-masajes.com/precios.php",
+    "amount": 110000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:44:26.358640+00:00",
+    "excerpt": "Reiki y circuito wellness: tarjeta $110,000; efectivo o transferencia $100,000. Valores vigentes desde agosto 2026, final sin cargos adicionales.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Final publicado; desglose de IVA no informado",
+    "conditionsSource": "https://lotus-masajes.com/terminos-y-condiciones.php"
+  },
+  "R4b497c2e16f": {
+    "kind": "public",
+    "source": "https://lotus-masajes.com/precios.php",
+    "amount": 150000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:44:26.358640+00:00",
+    "excerpt": "Spa & Brunch en Lotus: tarjeta $150,000; efectivo o transferencia $140,000. Valores vigentes desde agosto 2026, final sin cargos adicionales.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Final publicado; desglose de IVA no informado",
+    "conditionsSource": "https://lotus-masajes.com/terminos-y-condiciones.php"
+  },
+  "R6ba280d206e": {
+    "kind": "public",
+    "source": "https://lotus-masajes.com/precios.php",
+    "amount": 265000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:44:26.358640+00:00",
+    "excerpt": "Día de spa, brunch y piscina en Lotus: tarjeta $265,000; efectivo o transferencia $245,000. Valores vigentes desde agosto 2026, final sin cargos adicionales.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Final publicado; desglose de IVA no informado",
+    "conditionsSource": "https://lotus-masajes.com/terminos-y-condiciones.php"
+  },
+  "Rada62257ef9": {
+    "kind": "public",
+    "source": "https://lotus-masajes.com/precios.php",
+    "amount": 65000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:44:26.358640+00:00",
+    "excerpt": "Circuito wellness en Lotus: tarjeta $65,000; efectivo o transferencia $60,000. Valores vigentes desde agosto 2026, final sin cargos adicionales.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Final publicado; desglose de IVA no informado",
+    "conditionsSource": "https://lotus-masajes.com/terminos-y-condiciones.php"
+  },
+  "R7c0e08a9c7e": {
+    "kind": "public",
+    "source": "https://lotus-masajes.com/precios.php",
+    "amount": 115000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:44:26.358640+00:00",
+    "excerpt": "Piscina y solárium de Krista con Lotus: tarjeta $115,000; efectivo o transferencia $105,000. Valores vigentes desde agosto 2026, final sin cargos adicionales.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Final publicado; desglose de IVA no informado",
+    "conditionsSource": "https://lotus-masajes.com/terminos-y-condiciones.php"
+  },
+  "R4bdbeb02629": {
+    "kind": "public",
+    "source": "https://spabelgrano.com/precios/",
+    "amount": 300000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:44:26.358640+00:00",
+    "excerpt": "Ego Day Spa 1 persona: lista $300,000; transferencia $240,000. Vigentes desde septiembre 2026, revisados octubre; no costos ocultos.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Final publicado; desglose de IVA no informado",
+    "conditionsSource": "https://spabelgrano.com/dias-de-spa/"
+  },
+  "R9b02a041f45": {
+    "kind": "public",
+    "source": "https://spabelgrano.com/precios/",
+    "amount": 490000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:44:26.358640+00:00",
+    "excerpt": "Premium Day Spa 1 persona: lista $490,000; transferencia $390,000. Vigentes desde septiembre 2026, revisados octubre; no costos ocultos.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Final publicado; desglose de IVA no informado",
+    "conditionsSource": "https://spabelgrano.com/dias-de-spa/"
+  },
+  "R6934a7a61b1": {
+    "kind": "public",
+    "source": "https://buenosaires.gob.ar/gcaba_historico/cultura/museos/museosaavedra",
+    "amount": 10000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:45:03.571292+00:00",
+    "excerpt": "Público General: $10.000; Residentes Argentinos y/o Extranjeros (con DNI): $2.000",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Precio de entrada publicado; IVA/cargos adicionales no desglosados"
+  },
+  "R723ac5062ae": {
+    "kind": "public",
+    "source": "https://buenosaires.gob.ar/cultura/museos/museo-de-esculturas-luis-perlotti",
+    "amount": 10000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:45:03.571292+00:00",
+    "excerpt": "Público General: $10.000; Residentes Argentinos y/o Extranjeros (con DNI): $2.000",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Precio de entrada publicado; IVA/cargos adicionales no desglosados"
+  },
+  "R45d8986a3f5": {
+    "kind": "public",
+    "source": "https://buenosaires.gob.ar/cultura/museos/museo-fernandez-blanco/palacio-noel",
+    "amount": 10000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:45:03.571292+00:00",
+    "excerpt": "Público General: $10.000; Residentes Argentinos y/o Extranjeros (con DNI): $2.000",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Precio de entrada publicado; IVA/cargos adicionales no desglosados"
+  },
+  "R55e7ea82945": {
+    "kind": "public",
+    "source": "https://buenosaires.gob.ar/cultura/museos/museo-del-cine-pablo-ducros-hicken",
+    "amount": 10000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:45:59.395248+00:00",
+    "excerpt": "Público General: $10.000; Residentes Argentinos y/o Extranjeros (con DNI): $2.000",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Precio de entrada publicado; IVA/cargos adicionales no desglosados"
+  },
+  "Rcf2c94cc778": {
+    "kind": "public",
+    "source": "https://www.estacionvertical.com.ar/secciones/precios.html",
+    "amount": 32000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "clase de escalada $32.000 / efectivo $29.000 incluye pase diario y pédulas.",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente"
+  },
+  "Rc50fabfd480": {
+    "kind": "public",
+    "source": "https://catamaranestigre.com.ar/es/exp/paseo-5-rios",
+    "amount": 26000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Paseo 5 Ríos · tarifa general/adulto online $26000",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente"
+  },
+  "R8df52cea62b": {
+    "kind": "public",
+    "source": "https://catamaranestigre.com.ar/es/exp/PostalesdeBuenosAires",
+    "amount": 26000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:46:09.054755+00:00",
+    "excerpt": "Postales de Buenos Aires — solo ida · tarifa general/adulto online $26000",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente"
+  },
+  "Rd459510629a": {
+    "kind": "public",
+    "source": "https://spabuenosaires.com/services/",
+    "amount": 115000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:48:05.129946+00:00",
+    "excerpt": "Armonía Serena — circuito de spa individual — ARS 115000 — 1 h 30 min",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente"
+  },
+  "R27d7eb6199d": {
+    "kind": "public",
+    "source": "https://spabuenosaires.com/services/",
+    "amount": 130000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:48:05.129946+00:00",
+    "excerpt": "Energía Renovada — spa con sauna y merienda — ARS 130000 — 2 h 30 min",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente"
+  },
+  "R4f365cce6c2": {
+    "kind": "public",
+    "source": "https://spabuenosaires.com/services/",
+    "amount": 145000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:48:05.129946+00:00",
+    "excerpt": "Refugio Total — circuito con hidromasaje — ARS 145000 — 3 h",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente"
+  },
+  "Ra3f5559f546": {
+    "kind": "public",
+    "source": "https://spabuenosaires.com/services/",
+    "amount": 155000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:48:05.129946+00:00",
+    "excerpt": "Esencia de Amor — circuito con chocolaterapia — ARS 155000 — 3 h",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente"
+  },
+  "R93cdefd9284": {
+    "kind": "public",
+    "source": "https://www.pausaquantica.com/precios",
+    "amount": 75000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:48:05.129946+00:00",
+    "excerpt": "Masaje de cuerpo completo — 60 minutos — ARS 75000 — 60 min",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente"
+  },
+  "R18e687f5ec7": {
+    "kind": "public",
+    "source": "https://artesaniagirasol.wixsite.com/arte/cursos-cer%C3%A1mica",
+    "amount": 10000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:48:05.129946+00:00",
+    "excerpt": "Primera clase de cerámica en Villa Crespo — ARS 10000 — 2 h",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente"
+  },
+  "Rfb1a6a28d48": {
+    "kind": "public",
+    "source": "https://www.arcillasdelsur.com.ar/productos/clase-suelta/",
+    "amount": 40000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:48:05.129946+00:00",
+    "excerpt": "Clase suelta de cerámica en Lanús — ARS 40000 — A confirmar",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente"
+  },
+  "R69a42c0f234": {
+    "kind": "public",
+    "source": "https://www.inmasajes.com/masajespararelajar",
+    "amount": 85000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:48:05.129946+00:00",
+    "excerpt": "Oasis Térmico — masaje con piedras calientes — ARS 85000 — 75 min",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente"
+  },
+  "Rb44bc829ed9": {
+    "kind": "public",
+    "source": "https://www.inmasajes.com/masajespararelajar",
+    "amount": 75000,
+    "currency": "ARS",
+    "checkedAt": "2026-11-07T15:48:05.129946+00:00",
+    "excerpt": "Pausa Sueca — masaje sueco — ARS 75000 — 60 min",
+    "unit": "person",
+    "providerPublished": true,
+    "taxes": "Desglose no informado en la fuente"
+  }
+}

@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import {availabilityBatch,chooseAvailability,declineAvailability} from '../app/lib/availability.mjs';
+const now=new Date('2026-10-28T18:00:00Z'),q={status:'requested',people:2,availabilityRounds:0};
+const input={checked:true,dates:['2026-11-01T15:00','2026-11-02T15:00','2026-11-03T15:00'],price:15000,currency:'ARS',provider:'Fixture provider',place:'Fixture place',policy:'Fixture policy',reference:'Fixture confirmation for two',expires:'2026-10-29T10:00',cancelBefore:'2026-10-30T15:00'};
+const build=b=>availabilityBatch({...input,...b},q,{},now);
+let batch=build({});assert.equal(batch.options.length,3);assert.equal(batch.options[0].total,30000);assert.equal(batch.round,1);assert.equal(batch.options[0].paymentRequired,false);
+for(const b of [{checked:false},{dates:[]},{dates:[...input.dates,'2026-11-04T15:00']},{reference:''},{expires:'2026-10-30T10:00'},{cancelBefore:'2026-11-02T15:00'},{price:NaN},{currency:'EUR'},{paymentRequired:true}])assert.throws(()=>build(b));
+assert.throws(()=>availabilityBatch(input,{...q,status:'approved'}, {},now));
+assert.throws(()=>availabilityBatch(input,{...q,availabilityRounds:2}, {},now));
+const request={...q,status:'availability_options',availability:batch,availabilityRounds:1};
+assert.throws(()=>chooseAvailability(structuredClone(request),{batchId:'stale',optionId:batch.options[0].id},now));
+assert.throws(()=>chooseAvailability(structuredClone(request),{batchId:batch.id,optionId:'foreign'},now));
+assert.throws(()=>chooseAvailability(structuredClone(request),{batchId:batch.id,optionId:batch.options[0].id},new Date(batch.expires)));
+const chosen=structuredClone(request);chooseAvailability(chosen,{batchId:batch.id,optionId:batch.options[1].id},now);assert.equal(chosen.status,'quoted');assert.equal(chosen.quote.date,input.dates[1]);assert.equal(chosen.quote.total,30000);assert.equal(chosen.acceptedTermsAt,undefined);assert.equal(chosen.availability,null);
+let rejected=structuredClone(request);declineAvailability(rejected,{batchId:batch.id});assert.equal(rejected.status,'requested');rejected={...request,availabilityRounds:2};declineAvailability(rejected,{batchId:batch.id});assert.equal(rejected.status,'replan_needed');
+console.log('Availability checks passed: verified group slots, 3-option/2-round caps, 24h expiry, immutable quotes, stale/foreign/expired guards and explicit choice without approval/payment.');

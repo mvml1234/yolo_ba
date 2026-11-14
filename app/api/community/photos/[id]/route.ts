@@ -1,0 +1,4 @@
+import {env} from 'cloudflare:workers';
+import {getChatGPTUser} from '../../../../chatgpt-auth';
+export const dynamic='force-dynamic';
+export async function GET(req:Request,ctx:{params:Promise<{id:string}>}){const {id}=await ctx.params;const u=await getChatGPTUser();const m=await env.DB!.prepare('SELECT m.*,p.status FROM community_media m LEFT JOIN community_posts p ON p.id=m.post_id WHERE m.id=?').bind(id).first() as any;if(!m||(m.status!=='published'&&m.owner_id!==u?.userId))return new Response('Foto no disponible',{status:404});const file=await env.BUCKET?.get(m.storage_key);if(!file)return new Response('Foto no disponible',{status:404});return new Response(file.body,{headers:{'Content-Type':'image/webp','Content-Disposition':'inline; filename="experiencia.webp"','X-Content-Type-Options':'nosniff','Cache-Control':'private, no-store'}})}

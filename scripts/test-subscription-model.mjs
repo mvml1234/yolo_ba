@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {rewardCategory} from '../app/lib/loyalty.mjs';
+import {collectPassportBooks} from '../app/lib/passport-books.mjs';
+import {membershipState} from '../app/lib/membership.mjs';
+import {paymentsConfiguration} from '../app/lib/payments.mjs';
+const categories=['Gastronomía','Bienestar'];const catalog=Array.from({length:8},(_,i)=>({id:'e'+i,category:categories[i<4?0:1]}));
+const requests=catalog.map((e,i)=>({id:'r'+i,experienceId:e.id,status:'completed',quote:{date:'2026-10-01T12:00'}}));
+assert.equal(rewardCategory({requests:requests.slice(0,3)},catalog),null);assert.equal(rewardCategory({requests:requests.slice(0,4)},catalog),'Gastronomía');assert.equal(rewardCategory({requests:[...requests.slice(0,3),requests[0]]},catalog),null);assert.equal(rewardCategory({requests:requests.map(q=>({...q,status:'visit_pending'}))},catalog),null);
+const stamps=requests.map((q,i)=>({id:q.id,experienceId:q.experienceId,category:catalog[i].category,title:'Salida '+i,date:'2026-10-01'}));const books=collectPassportBooks(stamps,categories);assert.equal(books.books[0].pages[0].target,4);assert.equal(books.books[0].pages[0].completed,4);assert.equal(books.books[0].complete,true);assert.equal(books.books[1].completed,0);
+assert.equal(membershipState({plusReward:{expires:'2099-01-01'}}).active,true);assert.equal(membershipState({plusReward:{expires:'2020-01-01'}}).active,false);assert.equal(membershipState({active:true}).active,false);assert.equal(paymentsConfiguration({PAYMENTS_MODE:'live',PAYMENTS_LIVE_APPROVED:'true'}).ready,false);
+console.log('Subscription model: direct payment only, verified/distinct visits, category completion, one edition per stamp, reward expiry and forged active flags passed.');

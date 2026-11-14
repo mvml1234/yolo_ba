@@ -1,0 +1,13 @@
+/* The rounded navigation face extends to reading, controls and supporting data.
+   Existing heading, wordmark and passport cover typography stays intact. */
+body,button,input,select,textarea{font-family:'Fredoka','Trebuchet MS',sans-serif}
+.hero-sticker,.mood-card span,.book-rank b,.book-identity-stamp b,
+.earned-passport-stamp>b,.passport-bitacora>summary,.social-experience>b,
+.ranking-number,.ranking-score>span,.payment-total b,.membership-base>strong,
+.membership-price strong,.tier-number,.membership-tier>strong,.tier-discount b,
+.member-amount-label strong,.receipt-total strong,.floating-ticket strong,
+.passport-stamp strong,.frequency b,.booking-review-price strong,.start-caption b{
+ font-family:'Fredoka','Trebuchet MS',sans-serif;
+}
+/* These buttons are experience titles and retain their heading treatment. */
+button.logo,button.title-button{font-family:Arial,Helvetica,sans-serif}

@@ -1,0 +1,95 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import ts from 'typescript';
+import {pathToFileURL} from 'node:url';
+import {createHmac} from 'node:crypto';
+import {context,env,db} from './api-test-runtime.mjs';
+import {cleanPhoto,socialDraft} from '../app/lib/social-domain.mjs';
+import {checkedPayment,verifyWebhook,paymentsConfiguration} from '../app/lib/payments.mjs';
+const root=process.cwd(),tmp=root+'/work/social-tests',runtime=pathToFileURL(root+'/scripts/api-test-runtime.mjs').href;
+await fs.mkdir(tmp,{recursive:true});
+const routes={};
+for(const [name,path] of Object.entries({community:'community',upload:'community/upload',photo:'community/photos/[id]',payments:'payments',webhook:'payments/webhook',admin:'admin',passport:'passport',launch:'launch',partners:'partners',setup:'payments/setup'})){
+ let code=await fs.readFile(root+'/app/api/'+path+'/route.ts','utf8');
+ code=code.replace("import leads from '../../lib/pilot-partners.json';","const leads=JSON.parse(await (await import('node:fs/promises')).readFile("+JSON.stringify(root+'/app/lib/pilot-partners.json')+",'utf8'));");
+ code=code.replace(/'cloudflare:workers'/g,JSON.stringify(runtime)).replace(/'\.\.\/(?:\.\.\/)*chatgpt-auth'/g,JSON.stringify(runtime)).replace(/import catalog from '[^']+';/,"import {verifiedTestExperience} from '"+pathToFileURL(root+'/scripts/verified-test-experience.mjs').href+"';const catalog=JSON.parse(await (await import('node:fs/promises')).readFile("+JSON.stringify(root+'/app/lib/catalog.json')+",'utf8')).map(e=>e.id==='E01'?verifiedTestExperience({...e,listed:true,price:1000,currency:'ARS',provider:'Fixture provider'}):e);" ).replace(/'\.\.\/(?:\.\.\/)*lib\/([^']+\.mjs)'/g,(_,file)=>JSON.stringify(pathToFileURL(root+'/app/lib/'+file).href));
+ const target=tmp+'/'+name+'.mjs';await fs.writeFile(target,ts.transpileModule(code,{compilerOptions:{module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText);routes[name]=await import(pathToFileURL(target));
+}
+const alice={userId:'alice',email:'alice@example.test'},bob={userId:'bob',email:'bob@example.test'},admin={userId:'owner',email:'mateomarques10@gmail.com'};
+async function call(name,user,body,query='',method=body?'POST':'GET',headers={}){
+ const req=new Request('https://yolo.test/api/'+name+query,{method,headers:{...(body?{'Content-Type':'application/json'}:{}),...headers},...(body?{body:JSON.stringify(body)}:{})});
+ const response=await context.run(user,()=>routes[name][method](req));return {code:response.status,...await response.json()};
+}
+const draft={action:'publish',experienceId:'E01',alias:'Mateo',caption:'Una experiencia para volver a vivir.',mediaIds:[],rating:5,visibilityConsent:true};
+assert.equal((await call('community',null,draft)).code,401);
+assert.equal((await call('community',alice,draft)).code,403);
+assert.throws(()=>socialDraft({...draft,visibilityConsent:false}));
+assert.equal((await call('community',alice,{...draft,rating:null},'','POST',{origin:'https://evil.test'})).code,403);
+function member(u){db.prepare('INSERT INTO members(id,email,state,revision,created_at) VALUES(?,?,?,0,?)').run(u.userId,u.email,JSON.stringify({requests:[{id:'done-'+u.userId,experienceId:'E01',status:'completed'}]}),new Date().toISOString())}
+member(alice);member(bob);member(admin);
+let result=await call('community',alice,draft);assert.equal(result.code,200,JSON.stringify(result));const post=result.id;
+assert.equal((await call('community',alice,draft)).code,409);
+await call('community',bob,{...draft,alias:'Otro viajero',rating:4});await call('community',admin,{...draft,alias:'Tercer viajero',rating:3});
+let feed=await call('community',null,undefined,'?summary=1');assert.equal(feed.ratings[0].count,3);assert.equal(feed.ratings[0].average,4);assert.equal(feed.minimumRankingReviews,3);
+feed=await call('community',bob);assert.equal(feed.posts.length,3);assert.ok(!JSON.stringify(feed.posts).includes('example.test'));assert.equal(feed.posts[0].author_id,undefined);
+await call('community',bob,{action:'like',id:post,liked:true});await call('community',bob,{action:'like',id:post,liked:true});feed=await call('community',bob);assert.equal(feed.posts.find(p=>p.id===post).likes,1);
+assert.equal((await call('community',bob,{action:'delete',id:post})).code,403);
+assert.equal((await call('community',bob,{action:'moderate',id:post,status:'hidden'})).code,403);
+assert.equal((await call('community',admin,{action:'moderate',id:post,status:'hidden'})).code,200);
+assert.equal((await call('community',null)).posts.length,2);
+assert.equal((await call('community',bob,undefined,'?moderation=1')).code,403);
+// A static WebP fixture with metadata and trailing bytes: only the image chunk survives.
+function webp(chunks){const body=Buffer.concat(chunks.map(([tag,data])=>{const head=Buffer.alloc(8);head.write(tag);head.writeUInt32LE(data.length,4);return Buffer.concat([head,data,data.length%2?Buffer.alloc(1):Buffer.alloc(0)])}));const h=Buffer.alloc(12);h.write('RIFF');h.writeUInt32LE(body.length+4,4);h.write('WEBP',8);return Buffer.concat([h,body])}
+const image=webp([['VP8 ',Buffer.from([0,0,0,0])],['EXIF',Buffer.from('private-location')],['XMP ',Buffer.from('private-name')]]);
+const clean=cleanPhoto(Buffer.concat([image,Buffer.from('trailing-secret')]));assert.equal(Buffer.from(clean).includes(Buffer.from('private')),false);assert.equal(clean.length,24);
+assert.throws(()=>cleanPhoto(webp([['ANIM',Buffer.alloc(6)],['VP8 ',Buffer.alloc(4)]])));
+const upload=await context.run(alice,()=>routes.upload.POST(new Request('https://yolo.test/api/upload',{method:'POST',headers:{'content-type':'image/webp'},body:image})));const media=await upload.json();assert.equal(upload.status,200,JSON.stringify(media));
+let photo=await context.run(bob,()=>routes.photo.GET(new Request('https://yolo.test'),{params:Promise.resolve({id:media.id})}));assert.equal(photo.status,404);
+assert.equal((await call('community',bob,{...draft,mediaIds:[media.id],rating:null})).code,409);
+result=await call('community',alice,{...draft,mediaIds:[media.id],rating:null});assert.equal(result.code,200);
+photo=await context.run(null,()=>routes.photo.GET(new Request('https://yolo.test'),{params:Promise.resolve({id:media.id})}));assert.equal(photo.status,200);
+await call('community',alice,{action:'delete',id:result.id});photo=await context.run(null,()=>routes.photo.GET(new Request('https://yolo.test'),{params:Promise.resolve({id:media.id})}));assert.equal(photo.status,404);
+assert.equal((await call('payments',alice,{bookingId:'abc'})).code,503);
+assert.equal((await call('payments',bob,undefined,'?admin=1')).code,403);
+assert.equal((await call('passport',null)).authenticated,false);
+assert.equal((await call('passport',alice)).passport.completed,0);const memberPublic=await call('passport',alice);assert.equal(memberPublic.membership.active,false);assert.equal(memberPublic.membership.offer.checkoutEnabled,false);assert.equal(memberPublic.membership.offer.monthlyPrice,3900);
+assert.equal((await call('launch',null)).code,403);assert.equal((await call('launch',bob)).code,403);assert.equal((await call('launch',admin)).code,200);
+assert.equal((await call('partners',bob)).code,403);assert.equal((await call('setup',bob)).code,403);
+let partners=await call('partners',admin);assert.equal(partners.partners.length,10);assert.equal(partners.partners[0].pipeline.stage,'prepared');
+assert.equal((await call('partners',admin,{id:'P01',revision:0,stage:'approved',price:7000,commissionRate:20})).code,400);
+assert.equal((await call('partners',admin,{id:'P01',revision:0,stage:'sent',threadUrl:'https://evil.test'})).code,400);
+assert.equal((await call('partners',admin,{id:'P01',revision:0,stage:'negotiating',notes:'fixture only'})).code,200);
+assert.equal((await call('partners',admin,{id:'P01',revision:0,stage:'sent'})).code,409);
+assert.equal((await call('partners',admin,{id:'P01',revision:1,stage:'approved',price:7000,commissionRate:20,availability:'fixture slot',policy:'fixture cancellation',threadUrl:'https://mail.google.com/mail/u/0/#inbox/fixture'})).code,200);
+assert.equal((await call('setup',admin)).ready,false);
+assert.equal(JSON.stringify(await call('passport',bob)).includes('alice@example.test'),false);
+const setup={MP_SELLER_OAUTH_TOKEN:'test-only-fixture',MP_SELLER_ID:'123',MP_SELLER_PROVIDER:'Fixture provider',MP_WEBHOOK_SECRET:'fixture-secret',PAYMENTS_PUBLIC_BASE_URL:'https://yolo.test',PAYMENTS_SITE_PUBLIC:'true',PAYMENTS_MODE:'test'};
+assert.equal(paymentsConfiguration(setup).ready,true);assert.equal(paymentsConfiguration({...setup,PAYMENTS_MODE:'live'}).ready,false);assert.equal(paymentsConfiguration({...setup,PAYMENTS_SITE_PUBLIC:'false'}).ready,false);
+Object.assign(env,setup);
+// Even a forged legacy booking must never charge or quote a solidarity record.
+const heartFixture={id:'heart-fixture',experienceId:'H001',status:'approved',people:1,quote:{paymentRequired:true,total:1000,currency:'ARS',provider:setup.MP_SELLER_PROVIDER}};
+db.prepare('UPDATE members SET state=? WHERE id=?').run(JSON.stringify({requests:[heartFixture]}),alice.userId);
+assert.equal((await call('payments',alice,{bookingId:heartFixture.id})).code,400);
+assert.equal((await call('admin',admin,{action:'quote',member:alice.userId,id:heartFixture.id})).code,400);
+const booking={id:'booking-fixture',experienceId:'E01',title:'Test experience',status:'approved',people:1,quote:{paymentRequired:true,price:1000,total:1000,feeCents:10000,currency:'ARS',provider:setup.MP_SELLER_PROVIDER,availabilityReference:'test-slot',expires:'2099-01-01T12:00:00Z',date:'2099-01-02T15:00'}};
+db.prepare('UPDATE members SET state=? WHERE id=?').run(JSON.stringify({requests:[booking]}),alice.userId);
+const originalFetch=globalThis.fetch;let count=0;
+globalThis.fetch=async(url,opts)=>{count++;assert.equal(url,'https://api.mercadopago.com/checkout/preferences');const body=JSON.parse(opts.body);assert.equal(body.items[0].unit_price,1000);assert.equal(body.marketplace_fee,100);return Response.json({id:'fixture-pref',sandbox_init_point:'https://sandbox.mercadopago.com.ar/checkout/v1/redirect?pref_id=fixture'})};
+db.prepare('UPDATE members SET state=? WHERE id=?').run(JSON.stringify({requests:[{...booking,experienceId:'E05'}]}),alice.userId);
+assert.equal((await call('payments',alice,{bookingId:booking.id})).code,409);assert.equal(count,0);
+db.prepare('UPDATE members SET state=? WHERE id=?').run(JSON.stringify({requests:[{...booking,quote:{...booking.quote,price:1}}]}),alice.userId);
+assert.equal((await call('payments',alice,{bookingId:booking.id})).code,409);assert.equal(count,0);
+db.prepare('UPDATE members SET state=? WHERE id=?').run(JSON.stringify({requests:[booking]}),alice.userId);
+result=await call('payments',alice,{bookingId:booking.id,amount:1});assert.equal(result.code,200,JSON.stringify(result));assert.equal((await call('payments',alice,{bookingId:booking.id})).code,200);assert.equal(count,1);
+const order=db.prepare('SELECT * FROM payment_orders WHERE booking_id=?').get(booking.id);
+const payment={id:12345,external_reference:order.id,currency_id:'ARS',transaction_amount:1000,collector_id:123,live_mode:false,status:'approved',date_last_updated:'2026-10-28T10:00:00Z',fee_details:[{amount:10}]};
+assert.equal(checkedPayment(order,payment,setup).status,'approved');assert.throws(()=>checkedPayment(order,{...payment,transaction_amount:1},setup));assert.throws(()=>checkedPayment(order,{...payment,live_mode:true},setup));assert.throws(()=>checkedPayment(order,{...payment,collector_id:9},setup));
+const tsNow=String(Math.floor(Date.now()/1000)),requestId='fixture-request';const hash=createHmac('sha256',setup.MP_WEBHOOK_SECRET).update(`id:12345;request-id:${requestId};ts:${tsNow};`).digest('hex');
+const signed=()=>new Request('https://yolo.test/api/payments/webhook?data.id=12345',{method:'POST',headers:{'x-request-id':requestId,'x-signature':`ts=${tsNow},v1=${hash}`},body:JSON.stringify({data:{id:999}})});
+assert.equal(await verifyWebhook(signed(),setup.MP_WEBHOOK_SECRET), '12345');assert.equal(await verifyWebhook(signed(),'wrong'),null);assert.equal(await verifyWebhook(signed(),setup.MP_WEBHOOK_SECRET,Date.now()+600000),null);
+globalThis.fetch=async()=>Response.json(payment);
+assert.equal((await routes.webhook.POST(signed())).status,200);assert.equal((await routes.webhook.POST(signed())).status,200);assert.equal(db.prepare('SELECT status FROM payment_orders WHERE id=?').get(order.id).status,'approved');
+payment.status='pending';payment.date_last_updated='2026-10-27T10:00:00Z';await routes.webhook.POST(signed());assert.equal(db.prepare('SELECT status FROM payment_orders WHERE id=?').get(order.id).status,'approved');
+assert.equal((await call('admin',admin,{action:'confirm',member:alice.userId,id:booking.id,code:'FAKE'})).code,400);
+globalThis.fetch=originalFetch;
+console.log('Social/payment tests passed: verified reviews, consent, privacy, moderation, photo ownership and metadata removal; server-priced checkout, duplicate prevention, signed canonical payment verification, replay ordering and test/live separation. All payment calls were local mocks.');
